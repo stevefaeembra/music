@@ -10,8 +10,8 @@ app.get(
   '/',(req, res) => 
   res.send(
     music.names_for_notes(
-      music.notes_for_scale("a","minor")
-    ).join(",")
+      music.notes_for_scale("f","lydian")
+    )
   )
 );
 
