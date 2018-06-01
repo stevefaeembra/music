@@ -7,10 +7,10 @@ const port = 3000;
 const app = express()
 
 app.get(
-  '/',(req, res) => 
+  '/:tonic/scale/:scale_name',(req, res) => 
   res.send(
     music.names_for_notes(
-      music.notes_for_scale("f","lydian")
+      music.notes_for_scale(req.params["tonic"],req.params["scale_name"])
     )
   )
 );

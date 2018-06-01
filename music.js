@@ -1,16 +1,16 @@
 
 const notes = {
     "c":0,
-    "c#":1,
+    "csharp":1,
     "d":2,
-    "d#":3,
+    "dsharp":3,
     "e":4,
     "f":5,
-    "f#":6,
+    "fsharp":6,
     "g":7,
-    "g#":8,
+    "gsharp":8,
     "a":9,
-    "a#":10,
+    "asharp":10,
     "b":11
 };
 
