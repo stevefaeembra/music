@@ -35,9 +35,19 @@ const scales = {
 };
 
 function notes_for_scale(tonic, scale_type) {
+    // e.g. "c#","minor" -> [1,3,4,6...]
     var result = [];
     for (var offset in scales) {
         result.push((offset+notes[tonic])%12);
+    }
+    return result;
+}
+
+function names_for_notes(note_numbers) {
+    // e.g. [0,1,2] -> [C,C#,D]
+    result = []
+    for (var index in note_numbers) {
+        result.push(notes_from_numbers[index]);
     }
     return result;
 }
@@ -46,4 +56,4 @@ module.exports.scales = scales;
 module.exports.notes = notes;
 module.exports.notes_from_numbers = notes_from_numbers;
 module.exports.notes_for_scale = notes_for_scale;
-
+module.exports.names_for_notes = names_for_notes;
