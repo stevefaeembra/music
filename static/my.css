@@ -69,35 +69,35 @@ li {
     width:40px;
     position:fixed;
     top:0px;
-    left:300px;
+    left:280px;
 }
 
 .note_8 {
     width:40px;
     position:fixed;
     top:0px;
-    left:340px;
+    left:320px;
 }
 
 .note_9 {
     width:40px;
     position:fixed;
     top:0px;
-    left:380px;
+    left:360px;
 }
 
 .note_10 {
     width:40px;
     position:fixed;
     top:0px;
-    left:420px;
+    left:400px;
 }
 
 .note_11 {
     width:40px;
     position:fixed;
     top:0px;
-    left:460px;
+    left:440px;
 }
 
 li.played {
@@ -108,5 +108,6 @@ li.played {
 
 li.silent {
     color:black;
+    background: white;
     height:200px;
 }

@@ -13,7 +13,7 @@ app.use(express.static('static'))
 app.get('/', function (req, res) {
   res.render('example', { 
     title: 'Hey', 
-    notez: [0,4,7],   
+    notez: music.notes_for_scale("c","major"),  
     notenames:['c','c#','d','d#','e','f','f#','g','g#','a','a#','b']})
 });
 
