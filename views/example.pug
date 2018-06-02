@@ -3,12 +3,13 @@ html
     title= title
     link(rel="stylesheet" href="my.css")
   body
-    ul
-        - for (var x=0;x<12;x++) {
-            if (notez.includes(x))
-                li(class="played note_"+x)
-                    = notenames[x]
-            else
-                li(class="silent note_"+x) 
-                    = notenames[x]
-        - }
+    div.piano
+        ul
+            - for (var x=0;x<12;x++) {
+                if (notez.includes(x))
+                    li(class="played note_"+x)
+                        = notenames[x]
+                else
+                    li(class="silent note_"+x) 
+                        = notenames[x]
+            - }

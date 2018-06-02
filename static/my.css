@@ -1,3 +1,112 @@
 body {
-    background-color: aqua;
+    background-color:bisque;
+}
+
+div.piano ul {
+    width: 480px; /*40px per key*/
+    height: 200px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+}
+
+.note_0 {
+    width:40px;
+    height:auto;
+    position:fixed;
+    top:0px;
+    left:0px;
+}
+
+.note_1 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:40px;
+}
+
+.note_2 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:80px;
+}
+
+.note_3 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:120px;
+}
+
+.note_4 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:160px;
+}
+
+.note_5 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:200px;
+}
+
+.note_6 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:240px;
+}
+
+.note_7 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:300px;
+}
+
+.note_8 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:340px;
+}
+
+.note_9 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:380px;
+}
+
+.note_10 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:420px;
+}
+
+.note_11 {
+    width:40px;
+    position:fixed;
+    top:0px;
+    left:460px;
+}
+
+li.played {
+    color: white;
+    background: black;
+    height: 200px;
+}
+
+li.silent {
+    color:black;
+    height:200px;
 }
