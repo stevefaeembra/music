@@ -8,6 +8,7 @@ const port = 3000;
 const app = express()
 app.set('views','./views')
 app.set('view engine','pug')
+app.use(express.static('static'))
 
 app.get('/', function (req, res) {
   res.render('example', { 
