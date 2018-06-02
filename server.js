@@ -15,6 +15,20 @@ app.get(
   )
 );
 
+app.get(
+  '/:tonic/scales',(req, res) => 
+  res.send(
+    music.scales_for_tonic(req.params["tonic"])
+  )
+);
+
+app.get(
+  '/:tonic/chords',(req, res) => 
+  res.send(
+    music.chords_for_tonic(req.params["tonic"])
+  )
+);
+
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
 
 //var m = music.names_for_notes(music.notes_for_scale("c#","major"))
