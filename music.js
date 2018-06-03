@@ -87,7 +87,7 @@ function chords_for_tonic(tonic) {
     var result={};
     for (var chord_type in chords) {
         notes2 = notes_for_chord(tonic, chord_type);
-        chord_description = names_for_notes(notes2);
+        chord_description = notes2;
         chord_name = format("{} {}",tonic,chord_type);
         result[chord_name] = chord_description;
     };
