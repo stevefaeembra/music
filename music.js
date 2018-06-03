@@ -68,7 +68,7 @@ function scales_for_tonic(tonic) {
     var result={};
     for (var scale_type in scales) {
         scale_name=format("{} {}",tonic,scale_type);
-        result[scale_name]=names_for_notes(notes_for_scale(tonic,scale_type));
+        result[scale_name]=notes_for_scale(tonic,scale_type);
     };
     return result;
 }

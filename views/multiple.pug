@@ -1,0 +1,33 @@
+html
+  head
+    title= title
+    link(rel="stylesheet" href="../../my.css")
+  body
+    h1 
+        = "Scales for "+tonic
+    - for (var y in sets) {
+    - var notez=sets[y]
+    h2=y
+    div.piano
+        ul
+            - for (var x=0;x<12;x++) {
+                if (notez.includes(x))
+                    if (black.includes(x))
+                        li(class="played black note_"+x)
+                            span(class="note_name")
+                                = notenames[x]
+                    else
+                        li(class="played white note_"+x)
+                            span(class="note_name")
+                                = notenames[x]
+                else
+                    if (black.includes(x))
+                        li(class="silent black note_"+x)
+                            span(class="note_name") 
+                                = notenames[x]
+                    else
+                        li(class="silent white note_"+x) 
+                            span(class="note_name")
+                                = notenames[x]
+            - }
+    -}

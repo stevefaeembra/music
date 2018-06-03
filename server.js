@@ -33,10 +33,21 @@ app.get('/chord/:tonic/:chord_name', function (req, res) {
 
 app.get(
   '/scales/:tonic',(req, res) => 
-  res.send(
-    music.scales_for_tonic(req.params["tonic"])
-  )
+  res.render('multiple', {
+    tonic: req.params["tonic"],
+    title: format("Chords for {}",req.params["tonic"]), 
+    notenames: note_names,
+    black: black_notes,
+    sets: music.scales_for_tonic(req.params["tonic"])
+  })
 );
+
+// app.get(
+//   '/scales/:tonic',(req, res) => 
+//   res.render(
+//     music.scales_for_tonic(req.params["tonic"])
+//   )
+// );
 
 app.get(
   '/chords/:tonic',(req, res) => 
