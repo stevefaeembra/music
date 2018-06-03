@@ -73,15 +73,20 @@ function scales_for_tonic(tonic) {
     return result;
 }
 
+function notes_for_chord(tonic, chord_name) {
+    notes2 = [];
+    chord_offsets = chords[chord_name];
+    for (var index in chord_offsets) {
+        notes2.push((chord_offsets[index]+notes[tonic])%12);
+    };
+    return notes2;
+}
+
 function chords_for_tonic(tonic) {
     // list all chords for given tonic
     var result={};
     for (var chord_type in chords) {
-        notes2 = [];
-        chord_offsets = chords[chord_type];
-        for (var index in chord_offsets) {
-            notes2.push((chord_offsets[index]+notes[tonic])%12);
-        };
+        notes2 = notes_for_chord(tonic, chord_type);
         chord_description = names_for_notes(notes2);
         chord_name = format("{} {}",tonic,chord_type);
         result[chord_name] = chord_description;
@@ -101,6 +106,7 @@ function names_for_notes(note_numbers) {
 
 module.exports.scales = scales;
 module.exports.chords_for_tonic = chords_for_tonic;
+module.exports.notes_for_chord = notes_for_chord;
 module.exports.notes = notes;
 module.exports.notes_for_scale = notes_for_scale;
 module.exports.names_for_notes = names_for_notes;
