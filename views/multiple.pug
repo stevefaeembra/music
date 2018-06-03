@@ -7,8 +7,9 @@ html
         = "Scales for "+tonic
     - for (var y in sets) {
     - var notez=sets[y]
-    h2=y
+   
     div.piano
+        h1=y
         ul
             - for (var x=0;x<12;x++) {
                 if (notez.includes(x))

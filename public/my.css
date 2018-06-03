@@ -8,6 +8,16 @@ div.piano {
     perspective-origin: 50% 50%;
 }
 
+div.piano h1{
+    perspective: 1400px;
+    position: absolute;
+    top:-40px;
+    left:60px;
+    transform: rotateX(45deg);
+    perspective-origin: 50% 50%;
+}
+
+
 div.piano ul {
     width: 480px; /*40px per key at top*/
     height: 200px;
