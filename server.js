@@ -13,10 +13,12 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/:tonic/:scale_name', function (req, res) {
   res.render('example', { 
-    title: 'Hey You', 
+    title: format("{} {}",req.params["tonic"],req.params["scale_name"]), 
     notez: music.notes_for_scale(req.params["tonic"],req.params["scale_name"]),  
-    notenames:['c','c#','d','d#','e','f','f#','g','g#','a','a#','b']})
-});
+    notenames:['c','c#','d','d#','e','f','f#','g','g#','a','a#','b'],
+    black: [1,3,6,8,10]
+  })
+  });
 
 // app.get(
 //   '/:tonic/scale/:scale_name',(req, res) => 

@@ -1,5 +1,5 @@
 body {
-    background-color:red;
+    background-color:white;
 }
 
 div.piano ul {
@@ -14,7 +14,7 @@ ul {
 li {
     text-align: center;
     vertical-align: bottom;
-    box-shadow:0px 0px 0px 2px gold inset;
+    box-shadow:0px 0px 0px 2px grey inset;
 }
 
 .note_0 {
@@ -125,14 +125,38 @@ li {
     left:420px;
 }
 
-li.played {
+li.played.white {
     color: white;
-    background: black;
+    background: red;
     height: 200px;
 }
 
-li.silent {
+li.black span.note_name {
+    /** nudge black note off top */
+    position: relative;
+    top: 10px;
+}
+
+li.white span.note_name {
+    /** push white note names to bottom */
+    position: relative;
+    top: 170px;
+}
+
+li.silent.white {
     color:black;
     background: white;
+    height:200px;
+}
+
+li.played.black {
+    color: white;
+    background: #964747;
+    height: 200px;
+}
+
+li.silent.black {
+    color:white;
+    background: black;
     height:200px;
 }
