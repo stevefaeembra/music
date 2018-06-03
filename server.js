@@ -12,10 +12,9 @@ const app = express()
 app.set('views','./views')
 app.set('view engine','pug')
 app.use(express.static(__dirname + '/public'));
-//app.disable('etag'); // prevent 304 cacheing
 
 app.get('/scale/:tonic/:scale_name', function (req, res) {
-  res.render('example', { 
+  res.render('single', { 
     title: format("Scale : {} {}",req.params["tonic"],req.params["scale_name"]), 
     notez: music.notes_for_scale(req.params["tonic"],req.params["scale_name"]),  
     notenames: note_names,
@@ -24,7 +23,7 @@ app.get('/scale/:tonic/:scale_name', function (req, res) {
 });
 
 app.get('/chord/:tonic/:chord_name', function (req, res) {
-  res.render('example', { 
+  res.render('single', { 
     title: format("Chord : {} {}",req.params["tonic"],req.params["chord_name"]), 
     notez: music.notes_for_chord(req.params["tonic"],req.params["chord_name"]),  
     notenames: note_names,
