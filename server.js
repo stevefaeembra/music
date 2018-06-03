@@ -49,7 +49,7 @@ app.get(
     title: format("Chords for {}",req.params["tonic"]), 
     notenames: note_names,
     black: black_notes,
-    sets: music.scales_for_tonic(req.params["tonic"])
+    sets: music.chords_for_tonic(req.params["tonic"])
   })
 );
 
