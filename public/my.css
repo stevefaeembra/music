@@ -12,9 +12,10 @@ div.piano h1{
     perspective: 1400px;
     position: absolute;
     top:-40px;
-    left:60px;
+    left:90px;
     transform: rotateX(45deg);
     perspective-origin: 50% 50%;
+    text-transform: uppercase;
 }
 
 
@@ -23,7 +24,6 @@ div.piano ul {
     height: 200px;
     perspective: 1400px;
     transform: rotateX(45deg);
-    
 }
 
 ul {
@@ -35,7 +35,7 @@ li {
     text-transform: uppercase;
     font-weight: bolder; 
     vertical-align: bottom;
-    box-shadow:0px 0px 0px 2px grey inset;
+    box-shadow:0px 0px 0px 2px black inset;
 }
 
 .note_0 {
@@ -166,8 +166,6 @@ li.white.silent span.note_name {
     display: none;
 }
 
-
-
 li.white span.note_name {
     /** push white note names to bottom */
     position: relative;
@@ -175,6 +173,7 @@ li.white span.note_name {
 }
 
 li.silent.white {
+    opacity: 50%;
     color:black;
     background: white;
     height:200px;
@@ -182,11 +181,12 @@ li.silent.white {
 
 li.played.black {
     color: white;
-    background: #964747;
+    background: red;
     height: 200px;
 }
 
 li.silent.black {
+    opacity: 50%;
     color:white;
     background: black;
     height:200px;
