@@ -11,7 +11,7 @@ app.set('view engine','pug')
 app.use(express.static(__dirname + '/public'));
 //app.disable('etag'); // prevent 304 cacheing
 
-app.get('/:tonic/:scale_name', function (req, res) {
+app.get('/scale/:tonic/:scale_name', function (req, res) {
   res.render('example', { 
     title: format("{} {}",req.params["tonic"],req.params["scale_name"]), 
     notez: music.notes_for_scale(req.params["tonic"],req.params["scale_name"]),  

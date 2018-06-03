@@ -3,7 +3,7 @@ body {
 }
 
 div.piano ul {
-    width: 480px; /*40px per key*/
+    width: 480px; /*40px per key at top*/
     height: 200px;
 }
 
@@ -136,6 +136,16 @@ li.black span.note_name {
     position: relative;
     top: 10px;
 }
+
+li.black.silent span.note_name {
+    display: none;
+}
+
+li.white.silent span.note_name {
+    display: none;
+}
+
+
 
 li.white span.note_name {
     /** push white note names to bottom */
