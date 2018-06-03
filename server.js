@@ -5,6 +5,9 @@ format = require('python-format')
 const hostname = '127.0.0.1';
 const port = 3000;
 
+const note_names = ['c','c#','d','d#','e','f','f#','g','g#','a','a#','b'];
+const black_notes = [1,3,6,8,10];
+
 const app = express()
 app.set('views','./views')
 app.set('view engine','pug')
@@ -15,8 +18,8 @@ app.get('/scale/:tonic/:scale_name', function (req, res) {
   res.render('example', { 
     title: format("Scale : {} {}",req.params["tonic"],req.params["scale_name"]), 
     notez: music.notes_for_scale(req.params["tonic"],req.params["scale_name"]),  
-    notenames:['c','c#','d','d#','e','f','f#','g','g#','a','a#','b'],
-    black: [1,3,6,8,10]
+    notenames: note_names,
+    black: black_notes
   })
 });
 
@@ -24,8 +27,8 @@ app.get('/chord/:tonic/:chord_name', function (req, res) {
   res.render('example', { 
     title: format("Chord : {} {}",req.params["tonic"],req.params["chord_name"]), 
     notez: music.notes_for_chord(req.params["tonic"],req.params["chord_name"]),  
-    notenames:['c','c#','d','d#','e','f','f#','g','g#','a','a#','b'],
-    black: [1,3,6,8,10]
+    notenames: note_names,
+    black: black_notes
   })
 });
 
