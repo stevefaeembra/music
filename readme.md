@@ -33,7 +33,8 @@ Chords for a given tonic note
 > http://127.0.0.1:3000/chords/[tonic]
 
 e.g.
-
+>
+http://127.0.0.1:3000/chords/c
 >
 http://127.0.0.1:3000/chords/f-sharp
 >
