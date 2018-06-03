@@ -17,88 +17,111 @@ li {
 }
 
 .note_0 {
-    width:40px;
+    /** C */
+    width:60px;
     height:auto;
-    position:fixed;
+    position:relative;
     top:0px;
     left:0px;
+    vertical-align: text-bottom;
 }
 
 .note_1 {
+    /** C sharp */
     width:40px;
-    position:fixed;
-    top:0px;
+    max-height:50%;
+    position:relative;
+    top:-100%;
     left:40px;
+    z-index:1000;
 }
 
 .note_2 {
-    width:40px;
-    position:fixed;
-    top:0px;
-    left:80px;
+    /** D */
+    width:80px;
+    position:relative;
+    top:-150%;
+    left:60px;
 }
 
 .note_3 {
+    /** D sharp */
     width:40px;
-    position:fixed;
-    top:0px;
-    left:120px;
+    max-height:50%;
+    position:relative;
+    top:-250%;
+    left:121px;
+    z-index: 1000;
 }
 
 .note_4 {
-    width:40px;
-    position:fixed;
-    top:0px;
-    left:160px;
+    /** E */
+    width:60px;
+    position:relative;
+    top:-300%;
+    left:140px;
 }
 
 .note_5 {
-    width:40px;
-    position:fixed;
-    top:0px;
+    /** F */
+    width:60px;
+    position:relative;
+    top:-400%;
     left:200px;
 }
 
 .note_6 {
+    /** F sharp */
     width:40px;
-    position:fixed;
-    top:0px;
+    max-height:50%;
+    position:relative;
+    top:-500%;
     left:240px;
+    z-index: 1000;
 }
 
 .note_7 {
-    width:40px;
-    position:fixed;
-    top:0px;
-    left:280px;
+    /** G */
+    width:80px;
+    position:relative;
+    top:-550%;
+    left:260px;
 }
 
 .note_8 {
+    /** G sharp */
     width:40px;
-    position:fixed;
-    top:0px;
+    position:relative;
+    top:-650%;
+    max-height: 50%;
     left:320px;
+    z-index: 1000;
 }
 
 .note_9 {
-    width:40px;
-    position:fixed;
-    top:0px;
-    left:360px;
+    /** A */
+    width:80px;
+    position:relative;
+    top:-700%;
+    left:340px;
 }
 
 .note_10 {
+    /** A sharp */
     width:40px;
-    position:fixed;
-    top:0px;
+    position:relative;
+    top:-800%;
+    max-height:50%;
     left:400px;
+    z-index: 1000;
 }
 
 .note_11 {
-    width:40px;
-    position:fixed;
-    top:0px;
-    left:440px;
+    /** B */
+    width:60px;
+    position:relative;
+    top:-850%;
+    left:420px;
 }
 
 li.played {
