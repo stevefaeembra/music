@@ -1,9 +1,11 @@
 Introduction
 ============
 
-This is me learning Javascript.
+This is me learning Javascript. Pay no heed, for I don't know what I'm doing.
 
 Using node.js with the express framework, and pug as a template engine.
+
+Aim is to render chords/scales using 3d CSS
 
 Starting up
 ===========
