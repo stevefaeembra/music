@@ -3,16 +3,21 @@ var format=require("python-format");
 
 const notes = {
     "c":0,
-    "csharp":1,
+    "c-sharp":1,
+    "d-flat":1,
     "d":2,
-    "dsharp":3,
+    "d-sharp":3,
+    "e-flat":3,
     "e":4,
     "f":5,
-    "fsharp":6,
+    "f-sharp":6,
+    "g-flat":6,
     "g":7,
-    "gsharp":8,
+    "g-sharp":8,
+    "a-flat":8,
     "a":9,
-    "asharp":10,
+    "a-sharp":10,
+    "b-flat":10,
     "b":11
 };
 
