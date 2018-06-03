@@ -1,5 +1,5 @@
 body {
-    background-color:bisque;
+    background-color:red;
 }
 
 div.piano ul {
@@ -13,6 +13,7 @@ ul {
 
 li {
     text-align: center;
+    vertical-align: bottom;
 }
 
 .note_0 {
