@@ -23,6 +23,8 @@ Scales for a given note
 
 e.g. http://127.0.0.1:3000/scales/e
 
+
+
 Use '-sharp' or '-flat' to start on a black note
 
 e.g. 
